@@ -1,0 +1,15 @@
+<div>
+    <h2>ESG Survey Form</h2>
+    <form (submit)="submitSurvey()">
+      <div>
+        <label for="question">Question:</label>
+        <input type="text" id="question" name="question" [(ngModel)]="question" required>
+      </div>
+      <div>
+        <label for="pdf">Upload PDF Report:</label>
+        <input type="file" id="pdf" name="pdf" (change)="onFileChange($event)" accept=".pdf" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
