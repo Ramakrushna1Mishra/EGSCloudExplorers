@@ -1,6 +1,11 @@
 # EsgSurveyAutomation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+## Prerequisites 
+Pre-Requisites:
+OpenAI API Key:
+You need to create an OpenAI account and go to the link below and create a secret key, and that will be your API key to this project.
+https://platform.openai.com/account/api-keys
+
 
 ## Development server
 
@@ -14,6 +19,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+Run
+step 1 `node Server/server.js`
+step 2 `npm start`
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
@@ -24,4 +33,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Before jumping into this you can refer to the API Documentation provided by OpenAI
+refer: https://platform.openai.com/docs/api-reference/chat
+
+We are using its chat/completions endpoint and they have already built a node package integrated with all the endpoints to the OpenAI API.
+refer:
+https://www.npmjs.com/package/openai
+https://platform.openai.com/docs/libraries
