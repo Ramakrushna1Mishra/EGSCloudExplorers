@@ -6,16 +6,20 @@ import { AppComponent } from './app.component';
 import { SurveyFormComponent } from './survey-form/survey-form.component';
 import { FormsModule } from '@angular/forms'; // Add this line
 import { PdfParserService } from './pdf-parser.service';
+import { ChatbotComponent } from './chatbot/chatbot.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SurveyFormComponent
+    SurveyFormComponent,
+    ChatbotComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule
   ],
   providers: [
