@@ -1,6 +1,6 @@
 
-  export const environment = {
-    production: false,
-    apiUrl: 'http://localhost:3000',
-    OPENAI_API_KEY:'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',
-  };
+export const environment = {
+  production: false,
+  apiUrl: 'https://cloudexplorers-openai.openai.azure.com/openai/deployments/cloudexplorers-bot/chat/completions?api-version=2024-02-15-preview',
+  OPENAI_API_KEY: '',
+};
