@@ -9,7 +9,7 @@ const app = express();
 const port = 3000;
 
 const configuration = new Configuration({
-  apiKey: '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',
+  apiKey:  process.env.OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
