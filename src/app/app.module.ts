@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SurveyFormComponent } from './survey-form/survey-form.component';
 import { FormsModule } from '@angular/forms'; // Add this line
-import { PdfParserService } from './pdf-parser.service';
 import { ChatbotComponent } from './chatbot/chatbot.component';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -23,7 +22,6 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule
   ],
   providers: [
-    PdfParserService //Provide PdfParserService
   ],
   bootstrap: [AppComponent]
 })
