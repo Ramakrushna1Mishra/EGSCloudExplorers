@@ -16,7 +16,7 @@ export class SurveyFormComponent {
   constructor() {}
 
   async submitSurvey() {
-    if (!this.question || !this.pdfFile) {
+    if (!this.pdfFile) {
       alert('Please fill out all fields');
       return;
     }
